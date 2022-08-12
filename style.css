@@ -6,7 +6,8 @@
     IMPORT FONTS
 -------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /*------------------------------------------------------------------
     IMPORT FILES
@@ -23,10 +24,11 @@
     SKELETON
 -------------------------------------------------------------------*/
 
+
 body {
     color: #999999;
     font-size: 14px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.80857;
 }
 
@@ -308,6 +310,7 @@ a img.aligncenter {
 }
 
 .navbar-dark .navbar-nav .nav-link{
+    font-family: 'Playfair Display', serif !important;
 	color: #ffffff;
 	letter-spacing: 1px;
 	font-size: 14px;
@@ -1729,9 +1732,9 @@ hr.invis1 {
     width: auto !important;
 }
 
-.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+/* .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 100%;
-}
+} */
 
 .bootstrap-select .dropdown-toggle:focus {
     outline: thin dotted #333333 !important;
@@ -1739,7 +1742,7 @@ hr.invis1 {
     outline-offset: -2px;
 }
 
-.bootstrap-select.form-control {
+/* .bootstrap-select.form-control {
     margin-bottom: 0;
     padding: 0;
     border: none;
@@ -1751,7 +1754,7 @@ hr.invis1 {
 
 .bootstrap-select.form-control.input-group-btn {
     z-index: auto;
-}
+} */
 
 .bootstrap-select.btn-group:not(.input-group-btn),
 .bootstrap-select.btn-group[class*="col-"] {
