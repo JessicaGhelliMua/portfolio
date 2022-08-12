@@ -87,7 +87,7 @@
 
     <section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.jpg')">
         <div class="heading">
-            <h1>hello i'm Dominic</h1>
+            <h1>hello i'm Jessica</h1>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua."</p>
             <h3 class="cd-headline clip is-full-width">
@@ -500,8 +500,15 @@
                 <div class="col-md-12">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate"
+                        <form name="sentMessage" novalidate="novalidate"
                             action="https://formsubmit.co/anamariatantar99@gmail.com" method="POST">
+                            <!-- Honeypot id="contactForm" -->
+                            <!-- <input type="text" name="_honey" style="display: none;"> -->
+
+                            <!-- Disable Captcha -->
+                            <!-- <input type="hidden" name="_captcha" value="false"> -->
+
+                            <!--  <input type="hidden" name="_next" value="https://https://a-tantar.github.io/jessicaghelli/"> -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -534,9 +541,9 @@
                                 <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
-                                    <button id="sendMessageButton" class="sim-btn btn-hover-new"
-                                        data-text="Send Message" type="submit">Send Message</button>
-                                    <!--    <form method="post" >
+                                    <button class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send
+                                        Message</button>
+                                    <!--    <form method="post" id="sendMessageButton">
                                         <input type="submit" value="Send Email" />
                                     </form> -->
                                 </div>
@@ -579,7 +586,7 @@
     <script src="js/headline.js"></script>
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- <script src="js/contact_me.js"></script> -->
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
