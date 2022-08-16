@@ -8,6 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
 /*------------------------------------------------------------------
     IMPORT FILES
@@ -24,6 +25,10 @@
     SKELETON
 -------------------------------------------------------------------*/
 
+.HeadingName{
+    font-family: 'Aboreto', cursive !important;
+
+}
 
 body {
     color: #999999;
