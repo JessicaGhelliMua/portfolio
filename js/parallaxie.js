@@ -12,7 +12,7 @@
     $.fn.parallaxie = function( options ){
 
         var options = $.extend({
-            speed: 0.2,
+            speed: 0.0,
             repeat: 'no-repeat',
             size: 'cover',
             pos_x: 'center',
