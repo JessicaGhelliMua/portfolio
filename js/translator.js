@@ -140,7 +140,7 @@ class Translator {
         languages: ["it"],
         defaultLanguage: "",
         detectLanguage: true,
-        filesLocation: "../i18n"
+        filesLocation: "i18n"
       };
     }
   }

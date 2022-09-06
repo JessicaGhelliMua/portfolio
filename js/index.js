@@ -5,7 +5,7 @@ var translator = new Translator({
     languages: ["en", "it"],
     defaultLanguage: "it",
     detectLanguage: true,
-    filesLocation: "../i18n"
+    filesLocation: "i18n"
 });
 
 translator.load();
