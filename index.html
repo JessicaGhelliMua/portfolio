@@ -51,6 +51,7 @@
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <img class="img-fluid" src="images/logoDefinitivo.png" alt="logo Jessica Ghelli" />
             </a>
+
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -63,24 +64,54 @@
                         <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">Chi sono</a>
+                        <a data-i18n="about" class="nav-link js-scroll-trigger" href="#about">Chi sono</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Servizi</a>
+                        <a data-i18n="servizi" class="nav-link js-scroll-trigger" href="#services">Servizi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonianze</a>
+                        <a data-i18n="testimonianzeMenu" class="nav-link js-scroll-trigger"
+                            href="#testimonials">Testimonianze</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contattami</a>
+                        <a data-i18n="Contattami" class="nav-link js-scroll-trigger" href="#contact">Contattami</a>
+                    </li>
+                    <li class="nav-item">
+                        <form>
+
+
+                            <button class="nav-link butLingua" type="button" name="lang" value="en" checked="">
+                                ENGLISH
+
+                            </button>
+
+                            <button class="nav-link butLingua" type="button" name="lang" value="it" checked="">
+                                ITALIANO
+
+                            </button>
+
+
+                        </form>
                     </li>
                 </ul>
+                <!--  <form>
+                    <fieldset>
+                        <legend>Choose a language:</legend>
+
+                        <label>
+                            <input type="radio" name="lang" value="en" checked /> English
+                        </label>
+                        <label>
+                            <input type="radio" name="lang" value="it" checked /> Italiano
+                        </label>
+                    </fieldset>
+                </form> -->
             </div>
         </div>
     </nav>
@@ -90,15 +121,15 @@
             <h1 class="HeadingName">Jessica Ghelli</h1>
             <p>"Life isn't perfect but your Make-Up can be"</p>
             <h3 class="cd-headline clip is-full-width">
-                <span>Trucco per </span>
+                <span data-i18n="title">Trucco per </span>
                 <span class="cd-words-wrapper">
-                    <b class="is-visible"> Spose</b>
-                    <b> Cerimonie</b>
-                    <b> Eventi</b>
-                    <b> Moda</b>
-                    <b> Shooting fotografici</b>
-                    <b> Cinema</b>
-                    <b> Teatro</b>
+                    <b data-i18n="spose" class="is-visible"> Spose</b>
+                    <b data-i18n="cerimonie"> Cerimonie</b>
+                    <b data-i18n="eventi"> Eventi</b>
+                    <b data-i18n="moda"> Moda</b>
+                    <b data-i18n="shooting"> Shooting fotografici</b>
+                    <b data-i18n="cinema"> Cinema</b>
+                    <b data-i18n="teatro"> Teatro</b>
                 </span>
             </h3>
         </div>
@@ -135,8 +166,9 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">
-                        <h2>Chi sono.</h2>
-                        <p>Jessica Ghelli nasce a Roma nel 1998 e si diploma al liceo scientifico tecnologico. </br>
+                        <h2 data-i18n="chi">Chi sono.</h2>
+                        <p data-i18n="JG">Jessica Ghelli nasce a Roma nel 1998 e si diploma al liceo scientifico
+                            tecnologico. </br>
                             Fin da piccola ha sempre avuto la passiona per il make-up, i colori e la ricerca delle
                             sfumature.</br>
                             Frequenta l'accademia di trucco professionale con il corso regionale di 500 ore, dove,
@@ -145,13 +177,14 @@
                             Si specializza nel make-up beauty in tutte le sue sfaccettature, effetti speciali e trucco
                             creativo.</br>
                         </p>
-                        <p>Terminato il percorso di studi, affiancata da Rossano De Cesaris nelle prime dei film per
+                        <p data-i18n="JG2">Terminato il percorso di studi, affiancata da Rossano De Cesaris nelle prime
+                            dei film per
                             01Distribution, entra a far parte del team di Lorena Leonardis
                             dove trucca per importanti case di moda (Gucci, Fendi, Cartier etc.) e collabora con il team
                             di Martina Lizzani.</p>
 
-                        <a href="./images/cv/Jessica Ghelli.pdf" class="sim-btn btn-hover-new" data-text="Scarica CV"
-                            download><span>Scarica CV</span></a>
+                        <a data-i18n="download" href="./images/cv/Jessica Ghelli.pdf" class="sim-btn btn-hover-new"
+                            data-text="Scarica CV" download><span>Scarica CV</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -171,7 +204,7 @@
     <div id="services" class="section lb">
         <div class="container">
             <div class="section-title text-left">
-                <h3>Servizi</h3>
+                <h3 data-i18n="Servizi">Servizi</h3>
                 <p>Scopri tutti i miei servizi.</p>
             </div><!-- end title -->
 
@@ -181,9 +214,10 @@
                         <div class="ser-icon">
                             <img src="./images/icons/004-wedding-ring.png"></img>
                         </div>
-                        <h2>Make-Up Sposa</h2>
-                        <p>Il pacchetto comprede: </br>
-                            Prova trucco, kit per i ritocchi e make-up in omaggio per una persona a scelta
+                        <h2 data-i18n="Servizio1">Make-Up Sposa</h2>
+                        <p data-i18n="Servizio1Desc1">Il pacchetto comprede: </p></br>
+                        <p data-i18n="Servizio1Desc2"> Prova trucco, kit per i ritocchi e make-up in omaggio per una
+                            persona a scelta
                         </p>
                     </div>
                 </div><!-- end col -->
@@ -192,9 +226,9 @@
                         <div class="ser-icon">
                             <img src="./images/icons/003-cheers.png"></img>
                         </div>
-                        <h2>Make-Up Cerimonia</h2>
-                        <p>Make-up ideale per occasioni speciali: </br>
-                            battesimo, comunione, cresima, laurea, diciottesimo, etc.
+                        <h2 data-i18n="Servizio2">Make-Up Cerimonia</h2>
+                        <p data-i18n="Servizio2Desc1">Make-up ideale per occasioni speciali: </p></br>
+                        <p data-i18n="Servizio2Desc2"> battesimo, comunione, cresima, laurea, diciottesimo, etc.
                         </p>
                     </div>
                 </div><!-- end col -->
@@ -203,8 +237,9 @@
                         <div class="ser-icon">
                             <img src="./images/icons/002-magazine.png"></img>
                         </div>
-                        <h2>Make-Up Moda</h2>
-                        <p>Make-Up glamour, fashion adatto per shooting, sfilate, editoriali, case di alta
+                        <h2 data-i18n="Servizio3">Make-Up Moda</h2>
+                        <p data-i18n="Servizio3Desc1">Make-Up glamour, fashion adatto per shooting, sfilate, editoriali,
+                            case di alta
                             moda, etc. </p>
                     </div>
                 </div><!-- end col -->
@@ -213,9 +248,10 @@
                         <div class="ser-icon">
                             <img src="./images/icons/006-theater-masks.png"></img>
                         </div>
-                        <h2>Make-Up Creativo</h2>
-                        <p>Trucco teatrale</br>
-                            Make-up adatto per feste a tema, halloween, carnevale, trucca bimbi, belly painting, body
+                        <h2 data-i18n="Servizio4">Make-Up Creativo</h2>
+                        <p data-i18n="Servizio4Desc1">Trucco teatrale </p></br>
+                        <p data-i18n="Servizio4Desc2"> Make-up adatto per feste a tema, halloween, carnevale, trucca
+                            bimbi, belly painting, body
                             painting face painting, etc. </br>
                         </p>
                     </div>
@@ -225,12 +261,11 @@
                         <div class="ser-icon">
                             <img src="./images/icons/005-videocamera.png"></img>
                         </div>
-                        <h2>Make-Up Cinematografico</h2>
-                        <p>Effetti speciali (ferite, tagli, etc.) </br>
-                            Applicazione protesi, parrucche e posticci</br>
-                            Trucco d'epoca </br>
-                            Trucco acqua e sapone e beauty correttivo</br>
-                        </p>
+                        <h2 data-i18n="Servizio5">Make-Up Cinematografico</h2>
+                        <p data-i18n="Servizio5Desc1">Effetti speciali (ferite, tagli, etc.) </p>
+                        <p data-i18n="Servizio5Desc2">Applicazione protesi, parrucche e posticci</p>
+                        <p data-i18n="Servizio5Desc3">Trucco d'epoca</p>
+                        <p data-i18n="Servizio5Desc4">Trucco acqua e sapone e beauty correttivo</p>
                     </div>
                 </div><!-- end col -->
                 <!-- end col -->
@@ -242,7 +277,8 @@
         <div class="container">
             <div class="section-title text-left">
                 <h3>Portfolio</h3>
-                <p>Make up per matrimonio, shooting fotografici, trucco a domicilio per eventi: dai un’occhiata al mio
+                <p data-i18n="descPortfolio">Make up per matrimonio, shooting fotografici, trucco a domicilio per
+                    eventi: dai un’occhiata al mio
                     Portfolio e scopri come, attraverso tecniche e prodotti all’avanguardia, ho esaltato la bellezza di
                     tante donne. Un perfetto make up non è mai soltanto una questione estetica: si tratta piuttosto di
                     esprimere un valore, di raccontare unicità.
@@ -252,12 +288,12 @@
             <div class="gallery-menu row">
                 <div class="col-md-12">
                     <div class="button-group filter-button-group text-left">
-                        <button class="active" data-filter="*">Tutto</button>
-                        <button data-filter=".gal_a">Matrimonio e cerimonie</button>
-                        <button data-filter=".gal_b">Moda</button>
-                        <button data-filter=".gal_c">Prime cinema</button>
-                        <button data-filter=".gal_d">Creativo</button>
-                        <button class="mt-1" data-filter=".gal_e">Cinematografico</button>
+                        <button data-i18n="Tutto" class="active" data-filter="*">Tutto</button>
+                        <button data-i18n="Matrimonio" data-filter=".gal_a">Matrimonio e cerimonie</button>
+                        <button data-i18n="Moda" data-filter=".gal_b">Moda</button>
+                        <button data-i18n="PrimeCinema" data-filter=".gal_c">Prime cinema</button>
+                        <button data-i18n="Creativo" data-filter=".gal_d">Creativo</button>
+                        <button data-i18n="Cinematografico" class="mt-1" data-filter=".gal_e">Cinematografico</button>
                     </div>
                 </div>
             </div>
@@ -738,7 +774,7 @@
     <div id="testimonials" class="section wb">
         <div class="container">
             <div class="section-title text-left">
-                <h3>Testimonianze</h3>
+                <h3 data-i18n="testimonianze">Testimonianze</h3>
                 <!--  <p> </p> -->
             </div><!-- end title -->
 
@@ -747,12 +783,12 @@
                     <div class="testi-carousel owl-carousel owl-theme">
                         <div class="testimonial clearfix">
                             <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Make-up perfetto!</h3>
-                                <p class="lead">Hai fatto un lavoro stupendo! Grazie.</p>
+                                <h3 data-i18n="testimonianze1"><i class="fa fa-quote-left"></i> Make-up perfetto!</h3>
+                                <p data-i18n="testimonianze2" class="lead">Hai fatto un lavoro stupendo! Grazie.</p>
                             </div>
                             <div class="testi-meta">
                                 <img src="images/porfolio/278006_ico.jpg" alt="" class="img-fluid alignleft">
-                                <h4>Eva Moore <small>- Attrice</small></h4>
+                                <h4>Eva Moore <small data-i18n="testimonianze3">- Attrice</small></h4>
                             </div>
                             <!-- end testi-meta -->
                         </div>
@@ -761,12 +797,12 @@
                         <div class="testimonial clearfix">
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Super Make-Up!</h3>
-                                <p class="lead">Super make-up, bellissimo.</p>
+                                <p data-i18n="testimonianze4" class="lead">Super make-up, bellissimo.</p>
                             </div>
                             <div class="testi-meta">
                                 <img src="images/porfolio/295983575_1722009638166078_1896379148701604207_n.jpg" alt=""
                                     class="img-fluid alignleft">
-                                <h4>Karin Bonucci <small>- Modella</small></h4>
+                                <h4>Karin Bonucci <small data-i18n="testimonianze5">- Modella</small></h4>
                             </div>
                             <!-- end testi-meta -->
                         </div>
@@ -774,26 +810,27 @@
 
                         <div class="testimonial clearfix">
                             <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Pazzesco!</h3>
-                                <p class="lead">Wow, ma che trucco è! PAZZESCO. </p>
+                                <h3 data-i18n="testimonianze6"><i class="fa fa-quote-left"></i> Pazzesco!</h3>
+                                <p data-i18n="testimonianze7" class="lead">Wow, ma che trucco è! PAZZESCO. </p>
                             </div>
                             <div class="testi-meta">
                                 <img src="images/porfolio/302178767_1207026006821158_5767152174508821931_n.jpg" alt=""
                                     class="img-fluid alignleft">
-                                <h4>Patrizia Pellegrino <small>- Attrice</small></h4>
+                                <h4>Patrizia Pellegrino <small data-i18n="testimonianze8">- Attrice</small></h4>
                             </div>
                             <!-- end testi-meta -->
                         </div>
                         <!-- end testimonial -->
                         <div class="testimonial clearfix">
                             <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Lavoro Incredibile!</h3>
-                                <p class="lead">Hai fatto un lavoro incredibile, grazie di cuore.</p>
+                                <h3 data-i18n="testimonianze9"><i class="fa fa-quote-left"></i> Lavoro Incredibile!</h3>
+                                <p data-i18n="testimonianze10" class="lead">Hai fatto un lavoro incredibile, grazie di
+                                    cuore.</p>
                             </div>
                             <div class="testi-meta">
                                 <img src="images/porfolio/Immagine 2022-09-01 013110.png" alt=""
                                     class="img-fluid alignleft">
-                                <h4>Sandro Bilotta <small>- Performer</small></h4>
+                                <h4>Sandro Bilotta <small data-i18n="testimonianze11">- Performer</small></h4>
                             </div>
                             <!-- end testi-meta -->
                         </div>
@@ -801,12 +838,13 @@
 
                         <div class="testimonial clearfix">
                             <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Trucco fantastico!</h3>
-                                <p class="lead">Trucco fantastico, il mio trucco ha retto per piu di 15 ore. Grazie</p>
+                                <h3 data-i18n="testimonianze12"><i class="fa fa-quote-left"></i> Trucco fantastico!</h3>
+                                <p class="lead" data-i18n="testimonianze13">Trucco fantastico, il mio trucco ha retto
+                                    per piu di 15 ore. Grazie</p>
                             </div>
                             <div class="testi-meta">
                                 <img src="images/porfolio/woman.png" alt="" class="img-fluid alignleft">
-                                <h4>Anna A. <small>- Insegnante</small></h4>
+                                <h4>Anna A. <small data-i18n="testimonianze14">- Insegnante</small></h4>
                             </div>
                             <!-- end testi-meta -->
                         </div>
@@ -898,8 +936,9 @@
     <div id="contact" class="section db">
         <div class="container">
             <div class="section-title text-left">
-                <h3>Contattami</h3>
-                <p>Compila la scheda qui di seguito per richiedere informazioni o preventivi personalizzati.
+                <h3 data-i18n="Contattami">Contattami</h3>
+                <p data-i18n="Contattami2">Compila la scheda qui di seguito per richiedere informazioni o preventivi
+                    personalizzati.
                 </p>
             </div><!-- end title -->
 
@@ -925,7 +964,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="name" id="name" placeholder="Nome"
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Name"
                                             required>
                                     </div>
                                     <div class="form-group">
@@ -934,20 +973,20 @@
                                     </div>
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="phone" id="phoneNumber"
-                                            placeholder="Numero di telefono">
+                                            placeholder="Phone">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
 
                                         <textarea class="form-control" id="comments" name="message"
-                                            placeholder="Messaggio" rows="3" required></textarea>
+                                            placeholder="Message" rows="3" required></textarea>
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
-                                    <button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Invia"
+                                    <button data-i18n="Send" id="sendMessageButton" class="sim-btn btn-hover-new"
                                         type="submit">Invia</button>
                                 </div>
                             </div>
@@ -966,9 +1005,9 @@
                         <a class="nav-link js-scroll-trigger" href="#home">Home</a>
                         <!-- <a href="#">Blog</a> -->
                         <!-- <a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a> -->
-                        <a class="nav-link js-scroll-trigger" href="#about">Chi sono</a>
+                        <a data-i18n="about" class="nav-link js-scroll-trigger" href="#about">Chi sono</a>
                         <!-- <a class="nav-link js-scroll-trigger" href="#faq">Faq</a> -->
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contattami</a>
+                        <a data-i18n="Contattami" class="nav-link js-scroll-trigger" href="#contact">Contattami</a>
                     </p>
                     <!-- <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Dominic</a> Design By :
                         <a href="https://html.design/">html design</a>
@@ -984,6 +1023,7 @@
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
     <!-- ALL JS FILES -->
+    <script type="module" src="js/index.js"></script>
     <script src="js/all.js"></script>
     <!-- Camera Slider -->
     <script src="js/jquery.mobile.customized.min.js"></script>
